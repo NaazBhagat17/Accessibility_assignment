@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Education Details</title>
+</head>
+
+<body>
+    <button class="accordion">Secondary Education</button>
+    <div class="panel">
+        <p>St Joseph's School</p>
+        <p>80%</p>
+    </div>
+
+    <button class="accordion">Bachelor's Degree</button>
+    <div class="panel">
+        <p>Punjab Technical University</p>
+        <p>85%</p>
+    </div>
+
+    <button class="accordion">Master's Degree</button>
+    <div class="panel">
+        <p>National Institute of Technology Jalandhar</p>
+        <p>80%</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+</body>
+
+</html>

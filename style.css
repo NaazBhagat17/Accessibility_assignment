@@ -1,0 +1,168 @@
+body {
+  margin:0;
+}
+.required::after{
+  content: "*";
+  color: red;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #5e5c5c;
+position: fixed;
+top: 0;
+width: 100%;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover:not(.active) {
+background-color: rgb(2, 2, 147);
+}
+.active {
+background-color: navy;
+}
+
+.emp-form{
+  margin-top: 50px;
+  background-color: 1px solid#ccc;
+  padding-left: 0px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin: 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: grey;
+}
+input[type=reset] {
+width: 150px;
+background-color: red;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit] {
+  width: 150px;
+  background-color: navy;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: blue;
+}
+div form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.custom-checkbox{
+  padding-top: 20px;
+}
+.foot {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: darkblue;
+ color: white;
+ text-align: center;
+}
+.foot p a{
+color: white;
+}
+#emp-exp {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#emp-exp td, #emp-exp th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#emp-exp tr:nth-child(odd){background-color: #f2f2f2;}
+
+#emp-exp tr:hover {background-color: #ddd;}
+
+#emp-exp th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: brown;
+  color: white;
+}
+.accordion {
+  background-color: lightcoral;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: lightblue;
+  overflow: hidden;
+}
+input[type=button] {
+  width: 100px;
+  background-color: brown;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button1{
+  background-color:brown;
+  color: white;
+  border:none;
+  padding: 14px 20px;
+  margin-left: 47%;
+  margin-top: 30px;
+}
+.modal-content{
+  margin-top: 120px;
+  margin-left: 25%;
+  padding: 10px;
+  align-items: center;
+  width: 50%;
+  background-color:lightblue;
+  z-index: 1;
+}
+#myModal{
+  display: none;
+}

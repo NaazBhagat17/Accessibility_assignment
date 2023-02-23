@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naaz-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="emp-form">
+            <h1>Employee Form</h1>
+            <ul>
+                <li><a class="active" href="#" id="bk">Home</a></li>
+                <li><a href="table.html">Emp-details</a></li>
+                <li><a href="accordian.html">Education</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div>
+            <form>
+                <label for="fname" class="required">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name" required>
+            
+                <label for="lname" class="required">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+
+                <label for="email" class="required">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            
+                <label for="year" class="required">Birth-year</label>
+                <select id="year" name="year">
+                <option value="">Select your birth year</option>   
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1995">1998</option>
+                <option value="1995">1999</option>
+                <option value="1995">2000</option>
+                <option value="1995">2001</option>
+                <option value="1995">2002</option>
+                </select>
+                
+                <label for="radio" class="required">Gender:</label>
+                <input type="radio" name="gender" required>Female
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Other
+               <br><br>
+               
+                <label for="text" class="required">Interests:</label><br>
+                <input type="checkbox" id="Reading" name="Reading" value="Reading" required>
+                <label for="vehicle1">Reading</label><br>
+                <input type="checkbox" id="Sports" name="Sports" value="Sports">
+                <label for="vehicle2">Sports</label><br>
+                <input type="checkbox" id="Photography" name="Photography" value="Photography">
+                <label for="vehicle3">Photography</label><br>
+                <input type="checkbox" id="Travel" name="Travel" value="Travel">
+                <label for="vehicle3">Travel</label><br>
+                <input type="checkbox" id="music" name="music" value="music">
+                <label for="vehicle3">Listening to music</label><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <p>copyright &copy;2023 <a href=”#”>naaz@bhagat</a></p>
+        </div>
+    </footer>
+</body>
+</html>
